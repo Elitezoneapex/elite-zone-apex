@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — PCOS Daily | Elite Zone Apex</title>
+    <meta name="description" content="Privacy policy for PCOS Daily, a privacy-first PCOS tracking app by Elite Zone Apex.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg: #0A0A0A;
+            --text: #E8E0D8;
+            --text-muted: #8A8480;
+            --accent: #FF6B1A;
+            --border: rgba(232, 224, 216, 0.1);
+            --card-bg: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 400;
+            background-image:
+                repeating-linear-gradient(0deg, transparent, transparent 59px, rgba(255,255,255,0.02) 59px, rgba(255,255,255,0.02) 60px),
+                repeating-linear-gradient(90deg, transparent, transparent 59px, rgba(255,255,255,0.02) 59px, rgba(255,255,255,0.02) 60px);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        nav a:hover { color: var(--accent); }
+
+        .nav-brand { display: flex; align-items: center; gap: 0.75rem; }
+        .nav-brand span { color: var(--accent); }
+
+        .back-link {
+            border: 1px solid var(--accent);
+            padding: 0.5rem 1.25rem;
+            transition: all 0.2s;
+        }
+
+        .back-link:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        main {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+
+        .page-label {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--accent);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .effective-date {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2::before {
+            content: '// ';
+            color: var(--accent);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .highlight-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-card p {
+            color: var(--text);
+            margin: 0;
+        }
+
+        footer {
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 2rem;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer span {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        footer a {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.65rem;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 600px) {
+            nav { padding: 1rem; }
+            main { padding: 6rem 1.25rem 3rem; }
+            footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">
+            <a href="https://elitezoneapex.com/"><span>EZ 360</span> ELITE ZONE APEX</a>
+        </div>
+        <a href="https://elitezoneapex.com/" class="back-link">Back to Site</a>
+    </nav>
+
+    <main>
+        <div class="page-label">Privacy Policy</div>
+        <h1>PCOS Daily</h1>
+        <p class="subtitle">A privacy-first PCOS tracking app. No accounts, no servers, no tracking.</p>
+        <div class="effective-date">Effective: May 19, 2026</div>
+
+        <div class="highlight-card">
+            <p>PCOS Daily does not collect, transmit, or store any of your data on external servers. Everything stays on your device.</p>
+        </div>
+
+        <section>
+            <h2>What We Collect</h2>
+            <p>Nothing. We do not operate servers that receive or store your data. All information you enter \u2014 symptoms, cycle events, medications, and notes \u2014 lives in a local database on your iPhone, encrypted at rest by iOS.</p>
+        </section>
+
+        <section>
+            <h2>What We Share</h2>
+            <p>Nothing. PCOS Daily has no advertising partners, no analytics services, and no third-party SDKs that receive your health data. The app makes zero network requests.</p>
+        </section>
+
+        <section>
+            <h2>Third-Party Services</h2>
+            <p>Version 1.0 of PCOS Daily includes no third-party code. No analytics, no crash reporting SDKs, no ad networks. If future versions add optional services, this policy will be updated and you will be notified in-app before any data leaves your device.</p>
+        </section>
+
+        <section>
+            <h2>iCloud Sync</h2>
+            <p>If you enable iCloud on your device, your data may sync through Apple\u2019s iCloud infrastructure using end-to-end encryption. Elite Zone Apex never has access to this data. You can disable iCloud sync at any time in your device\u2019s Settings.</p>
+        </section>
+
+        <section>
+            <h2>Crash Reports</h2>
+            <p>If you opt in through Apple\u2019s standard diagnostics settings, Apple may send anonymous crash reports to us via App Store Connect. These reports contain technical information about the crash and never include your health data, symptoms, or personal information.</p>
+        </section>
+
+        <section>
+            <h2>Your Data Rights</h2>
+            <p>You own your data completely. You can export all of it at any time (Settings &gt; Export) as a JSON file. You can permanently delete all data at any time (Settings &gt; Data &gt; Delete All). Deletion is immediate and irreversible \u2014 because we have no servers, there are no backups on our end to worry about.</p>
+        </section>
+
+        <section>
+            <h2>Children\u2019s Privacy</h2>
+            <p>PCOS Daily is not directed at children under 13. We do not knowingly collect information from children. Since the app collects no data at all, no special provisions are necessary.</p>
+        </section>
+
+        <section>
+            <h2>Medical Disclaimer</h2>
+            <p>PCOS Daily is a personal tracking tool. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider about your health.</p>
+        </section>
+
+        <section>
+            <h2>Changes to This Policy</h2>
+            <p>If we update this policy, the revised version will be posted here with a new effective date. Material changes \u2014 especially any that involve data collection \u2014 will be communicated through an in-app notice before taking effect.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Questions about this policy? Reach us at <a href="mailto:info@elitezoneapex.com" style="color: var(--accent);">info@elitezoneapex.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <span>EZ 360 &copy; 2026 Elite Zone Apex. All rights reserved.</span>
+        <a href="https://elitezoneapex.com/">elitezoneapex.com</a>
+    </footer>
+</body>
+</html>
